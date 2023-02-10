@@ -1,0 +1,109 @@
+.three-section{
+padding: 100px 0;
+    .three{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        
+        &__box1{
+
+            &__img{
+                border-radius: 50%;
+                padding: 0 70px;
+            }
+        }
+
+        &__box{
+
+            &__title{
+                font-size: 45px;
+                padding: 20px 0;
+                color: #495567;
+            }
+
+            &__text{
+                color: #49556799;
+
+            }
+
+            &__link{
+                display: inline-block;
+                margin-top: 20px;
+                padding: 13px 40px ;
+                border: 2px solid transparent;
+                background: #FCB72B;
+                color: white;
+                transition: 0.4s;
+
+                &:hover{
+                    background-color: transparent;
+                border: 2px solid#FCB72B  ;
+                color: #FCB72B;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .three-section{
+
+
+        .three{
+            flex-direction: column-reverse;
+            align-items: center;
+
+            &__box1{
+                padding: 0 200px;
+
+        
+            }
+
+
+            &__box{
+                padding: 30px;
+                text-align: center;
+                width: 100%;
+
+                 &__title{
+                    width: 100%;
+                 }
+             
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .three-section{
+        
+
+        .three{
+            flex-direction: column-reverse;
+            
+            &__box1{
+            }
+            &__box1__img{
+                width: 390px;
+
+            }
+
+            &__box{
+                text-align: center;
+                padding: 30px;
+                width: 100%;
+
+             &__title {
+                width: 100%;
+                font-size: 25px;
+             }
+             &__text {
+                width: 100%;
+                font-size: 13px;
+             }
+            }
+        }
+    }
+}

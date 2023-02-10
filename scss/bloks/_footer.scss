@@ -1,0 +1,85 @@
+.footer{
+    background: #495567;
+    // padding: 40px 0;
+
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__box{
+            
+            &__title{
+                font-size: 44px;
+                color: aliceblue;
+            }
+        }
+
+        
+    }
+
+
+    .car{
+        background: #333A44;
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 40px;
+
+        &__box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__link {
+                color: aliceblue;
+            }
+            &__list{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &__item{
+                margin-left: 30px;
+            }
+
+            &__image{
+                padding: 10px 40px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+
+        .card{
+            flex-direction: column;
+            text-align: center;
+
+            &__box1{
+
+                &__img{
+                    padding: 30px 0;
+                }
+            }
+        }
+    }
+
+    .car{
+        flex-direction: column;
+        margin: 50px 0;
+
+
+        &__box{
+            flex-direction: column;
+            padding: 40px 0;
+
+            &__list{
+                padding: 40px 0;
+            }
+        }
+    }
+}
