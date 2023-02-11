@@ -6,6 +6,8 @@
     background-color: #FFFFFF;
     z-index: 100000000000;
     box-shadow: 0 1px 10px #999 ;
+    width: 100%;
+
 }
 .header{
     @include center (space-between);
@@ -74,6 +76,38 @@ button{
         display: none;
     }
     .header__right{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:375px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+      
+    }
+.site-header{
+    width: 100%;
+
+}
+    .header__left {
+        @include center (none);
+    }
+
+    button {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 31px;
+    }
+
+    .header__left-list {
+        display: none;
+    }
+
+    .header__right {
         display: none;
     }
 }

@@ -399,6 +399,7 @@ img {
   background-color: #FFFFFF;
   z-index: 100000000000;
   box-shadow: 0 1px 10px #999;
+  width: 100%;
 }
 
 .header {
@@ -469,6 +470,33 @@ button {
     display: flex;
     align-items: center;
     justify-content: center !important;
+  }
+  .header__left {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+  }
+  button {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 31px;
+  }
+  .header__left-list {
+    display: none;
+  }
+  .header__right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+  }
+  .site-header {
+    width: 100%;
   }
   .header__left {
     display: flex;
@@ -712,6 +740,7 @@ button {
 .three-section .three__box1__img {
   border-radius: 50%;
   padding: 0 70px;
+  width: 250px;
 }
 .three-section .three__box__title {
   font-size: 45px;
@@ -757,8 +786,11 @@ button {
   .three-section .three {
     flex-direction: column-reverse;
   }
+  .three-section .three__box1 {
+    width: 100%;
+  }
   .three-section .three__box1__img {
-    width: 390px;
+    width: 100%;
   }
   .three-section .three__box {
     text-align: center;
@@ -858,6 +890,7 @@ button {
 }
 .besh-section .besh__car1__img {
   border-radius: 50%;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -872,7 +905,7 @@ button {
     flex-direction: column-reverse;
   }
   .besh-section .besh__car1__img {
-    width: 290px;
+    width: 350px;
   }
   .besh-section .besh__car {
     width: 100%;

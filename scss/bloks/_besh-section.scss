@@ -48,6 +48,7 @@
 
             &__img{
                 border-radius: 50%;
+                width: 100%;
             }
           }
     }
@@ -70,7 +71,7 @@
         flex-direction: column-reverse;
 
         &__car1__img{
-            width: 290px;
+            width: 350px;
         }
 
     &__car {
